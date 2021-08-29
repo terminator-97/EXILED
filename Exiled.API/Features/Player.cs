@@ -897,6 +897,24 @@ namespace Exiled.API.Features
                 else
                     ReferenceHub.characterClassManager.UserCode_CmdRequestShowTag(false);
             }
+        }        
+        
+        /// <summary>
+        /// Gets or sets a value indicating whether or not a player is Northwood staff.
+        /// </summary>
+        public bool IsNorthwoodStaff
+        {
+            get => ReferenceHub.serverRoles.Staff;
+            set => ReferenceHub.serverRoles.Staff = value;
+        }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether or not a player is a global moderator.
+        /// </summary>
+        public bool IsGlobalModerator
+        {
+            get => ReferenceHub.serverRoles.RaEverywhere;
+            set => ReferenceHub.serverRoles.RaEverywhere = value;
         }
 
         /// <summary>
